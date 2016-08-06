@@ -1,0 +1,35 @@
+Data Products Project
+========================================================
+Author: BM
+date: 8/6/2016
+autosize: true
+
+Exploring mtcars data 
+========================================================
+This project is using mtcars data to showcase the shinyapps capability. There are three tabs provided:
+
+- exploring mtcars data
+- scatter plot presentation between mpg, cyl, hp
+- about
+
+========================================================
+Sample Data
+```{r}
+head(mtcars)
+```
+
+Slide With Plot exploring the relationship betwen mpg, cycl and hp
+========================================================
+
+```{r, echo=FALSE}
+library(car)
+#plot(cars)
+scatterplot.matrix(~mpg+cyl+hp, data=mtcars, cex.axis=1.5)
+```
+
+Car is data is provided by motor trend magazine
+========================================================
+
+The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973 - 1974 models). 
+
+[Source: https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html)
